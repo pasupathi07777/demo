@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.header{
+    text-transform: capitalize;
+    background-color: black;
+    text-align: center  ;
+    color: #fff;
+}
+.footer{
+    width: 100%;
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    left: 0px;
+    background-color: black;
+    color: #fff;
+}
+.body{
+   
+ 
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+}
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.box{
+    display: flex;
+    width: 90%;
+    /* min-width: 400px;
+    max-width: 300px; */
+    min-height: 50px;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+   
+    overflow-y: visible;
+}
+input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+}
+.btn_trash{
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.para{
+   font-size: 24px;
+   text-align: center;
+
+   width: 100%;
+   /* overflow-x: scroll; */
+   padding: 5pxpx;
+}
+.para2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10%;
+}
+.form_input{
+    
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    gap: 5px;
+    padding: 0 5%;
+  
+}
+.form_input input{
+    /* padding: 5px; */
+    border: none;
+    font-size: 24px;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+    width: 100%;
+   
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+.form_input input::placeholder{
+    font-size: 26px;
+    /* color: black; */
+}
+.form_input input:focus{
+    outline: none;
+}
+.form_input button{
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    outline: none;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search_box{
+    padding-left: 10px;
+    border: none;
+    font-size: 30px;
+    border-radius: 5px;
+    /* max-width: 90%; */
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search_box::placeholder{
+    font-size: 26px;
+    /* padding-left: 10px; */
 }
-
-.App-link {
-  color: #61dafb;
+.search_box:focus{
+    outline: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-search{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+    margin:10px 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
